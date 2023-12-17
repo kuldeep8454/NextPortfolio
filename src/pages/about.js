@@ -53,24 +53,24 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I'm Kuldeep, a web developer and UI/UX designer with
-                technology like Reactjs, Angular, etc. I have just completed my
-                BSC.IT course. I am always looking for new and innovative ways
-                to bring my clients' visions to life.
-              </p>
-              <p className="font-medium my-4">
-                I believe that design is about more than just making things look
-                pretty – it's about solving problems and creating intuitive,
-                enjoyable experiences for users.
-              </p>
+  Hi, I&apos;m Kuldeep, a web developer and UI/UX designer with
+  technology like Reactjs, Angular, etc. I have just completed my
+  BSC.IT course. I am always looking for new and innovative ways
+  to bring my clients&apos; visions to life.
+</p>
+<p className="font-medium my-4">
+  I believe that design is about more than just making things look
+  pretty – it&apos;s about solving problems and creating intuitive,
+  enjoyable experiences for users.
+</p>
+<p className="font-medium">
+  Whether I&apos;m working on a website, mobile app, or other digital
+  product, I bring my commitment to design excellence and
+  user-centered thinking to every project I work on. I look
+  forward to the opportunity to bring my skills and passion to
+  your next project.
+</p>
 
-              <p className="font-medium">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
-              </p>
             </div>
 
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
