@@ -54,7 +54,7 @@ const about = () => {
               </h2>
               <p className="font-medium">
   Hi, I&apos;m Kuldeep, a web developer and UI/UX designer with
-  technology like Reactjs, Angular, etc. I have just completed my
+  technology like Reactjs, Tailwind, etc. I have just completed my
   BSC.IT course. I am always looking for new and innovative ways
   to bring my clients&apos; visions to life.
 </p>

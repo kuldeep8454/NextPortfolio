@@ -152,7 +152,7 @@ const projects = () => {
                 img={iNoteBook}
                 summary="A iNoteBook web Application using React, Bootstrap CSS, MongoDb, ExpressJs and NodeJs. 
             You can create note with that title and description that notes will stored on cloud with security notes can be accessed by only you."
-                link="https://github.com/kuldeep8454/React-iNotebook"
+                link="https://inotebook-semd.onrender.com"
                 github="https://github.com/kuldeep8454/React-iNotebook"
                 type="Featured Projects"
               />
@@ -165,7 +165,7 @@ const projects = () => {
                 // You can create note with that title and description that notes will stored on cloud with security notes can be accessed by only you."
                 link="https://github.com/kuldeep8454/React-KP-News"
                 github="https://github.com/kuldeep8454/React-KP-News"
-                type="Featured Projects"
+                type="Projects"
               />
             </div>
             {/* <div className="col-span-6 sm:col-span-12"><Projects
