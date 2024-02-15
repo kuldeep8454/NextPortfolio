@@ -1,16 +1,15 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import TransitionEffect from "@/components/TransitionEffect";
-import { Main } from "next/document";
 import Head from "next/head";
-// import { LinkArrow } from "@/components/Icons";
 import React from "react";
+
 
 const contact = () => {
   return (
     <>
       <Head>
-      <title>Kuldeep | Portfolio</title>
+        <title>Kuldeep | Portfolio</title>
         <meta name="description" content="Contact Details" />
       </Head>
       <TransitionEffect />
@@ -38,29 +37,32 @@ const contact = () => {
                   action="https://getform.io/f/fad5befb-fd45-442d-b24d-ec12339d8510"
                   method="POST"
                   className="flex flex-col w-full md:w-[70%]"
-                  
                 >
                   <input
+                    required
                     type="text"
                     name="name"
                     placeholder="Your name"
                     className="my-4 p-2 bg-transparent border-2 border-dark dark:border-light rounded-md  dark:text-light focus:outline-none"
                   />
+                  
                   <input
+                    required
                     type="email"
                     name="email"
                     placeholder="Your email"
                     className="my-4 p-2 bg-transparent border-2 border-dark dark:border-light rounded-md dark:text-light focus:outline-none"
                   />
                   <textarea
+                    required
                     name="message"
                     rows="10"
                     placeholder="Your message"
                     className="p-2 bg-transparent border-2 border-dark dark:border-light rounded-md dark:text-light focus:outline-none"
                   ></textarea>
-                  <button className="   bg-gradient-to-b from-cyan-500 to-black-800 font-semibold px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
-                  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base hover:scale-110 duration-300"
-                  target="_blank"
+                  <button
+                    className="bg-gradient-to-b from-cyan-500 to-black-800 font-semibold px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base hover:scale-110 duration-300"
+                    target="_blank"
                   >
                     Let's talk
                   </button>
