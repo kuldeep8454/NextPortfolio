@@ -1,15 +1,17 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/developer-pic-3.png";
+import profilePic from "../../public/images/profile/developer-img.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from '@/components/TransitionEffect';
+import About from "./about";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -19,10 +21,10 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
-          <div className="flex items-center justify-between w-full lg:flex-col">
+          <div className="flex items-center justify-between w-full lg:flex-col h-[100vh]">
             <div className="w-1/3 md:w-1/2">
-            <div className="col-span-3 h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-              {/* <div className=" top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" /> */}
+            
+              <div className=" top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={profilePic}
                 alt=""
@@ -32,7 +34,6 @@ export default function Home() {
               (max-width: 1200px) 50vw,
               33vw"
               />
-            </div>
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
@@ -56,14 +57,16 @@ export default function Home() {
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
-                  href="mailto: maddeshiyakuldeep@gmail.com"
-                  target="_blank"
+                   href="/contact"
                   className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline md:text-base"
                 >
                   Contact
                 </Link>
               </div>
             </div>
+          </div>
+          <div className="h-[100%]">
+            <About />
           </div>
         </Layout>
         {/* <HireMe /> */}

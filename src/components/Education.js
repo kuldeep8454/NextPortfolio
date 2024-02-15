@@ -22,13 +22,13 @@ const Details = ({ type, time, place, info, grades  }) => {
         <p className="font-medium w-full md:text-sm">{info}</p>
         {grades && (
           <p className="font-medium w-full">
-            {/* Grades:<br />
+            Grades:<br />
             {grades.map((grade, index) => (
               <React.Fragment key={index}>
                 {`SEM-${grade.sem}: (${grade.cgpa} CGPA)`}
                 <br />
               </React.Fragment>
-            ))} */}
+            ))}
           </p>
         )}
       </motion.div>
@@ -42,12 +42,13 @@ const Education = () => {
     target: ref,
     offset: ["start end", "center start"],
   });
-  // const gradesData = [
-  //   { sem: 1, cgpa: 9.5 },
-  //   { sem: 2, cgpa: 8.7 },
-  //   { sem: 3, cgpa: 8.5 },
-  //   { sem: 4, cgpa: 8.9 },
-  // ];
+  const gradesData = [
+    { sem: 1, cgpa: 9.5 },
+    { sem: 2, cgpa: 8.7 },
+    { sem: 3, cgpa: 8.5 },
+    { sem: 4, cgpa: 8.9 },
+    { sem: 5, cgpa: 8.8 },
+  ];
   return (
     <div className="my-64">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16
@@ -61,14 +62,22 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type={"Bachelor Of Science In Information Technology"}
-            time={"2021-2024"}
-            place={"Patkar Varde College"}
+            type={"10th Maharashtra State board."}
+            time={"March-2018"}
+            place={"Sarswati Vidya Mandir High School"}
             info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence etc."
-            }
+              "Scored 71.60% in Secondary School Certificate (SSC) examination."}
           />
-          {/* <Details
+
+<Details
+            type={"12th Maharashtra State board."}
+            time={"Febraury-2020"}
+            place={"Nirmala Memorial Foundation Jr College"}
+            info={
+              "Scored 55.58% in Science Stream in Higher Secondary Certificate (HSC) Examination."}
+          />
+
+          <Details
             type={"Bachelor Of Science In Information Technology"}
             time={"2021-2024"}
             place={"Patkar Varde College"}
@@ -76,7 +85,7 @@ const Education = () => {
               "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence etc."
             }
             grades={gradesData}
-          /> */}
+          />
         </ul>
       </div>
     </div>

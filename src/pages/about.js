@@ -3,11 +3,13 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../public/images/profile/developer-pic-1 (2).png";
+import profilePic from "../../public/images/profile/developer-pic.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import Projects from "./projects";
+import Contact from "./contact";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({ values }) => {
@@ -37,10 +39,10 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Kuldeep | About Page</title>
-        <meta name="description" content="any description" />
+        <title>Kuldeep | Portfolio</title>
+        <meta name="description" content="About" />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
@@ -53,24 +55,23 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-  Hi, I&apos;m Kuldeep, a web developer and UI/UX designer with
-  technology like Reactjs, Tailwind, etc. I have just completed my
-  BSC.IT course. I am always looking for new and innovative ways
-  to bring my clients&apos; visions to life.
-</p>
-<p className="font-medium my-4">
-  I believe that design is about more than just making things look
-  pretty – it&apos;s about solving problems and creating intuitive,
-  enjoyable experiences for users.
-</p>
-<p className="font-medium">
-  Whether I&apos;m working on a website, mobile app, or other digital
-  product, I bring my commitment to design excellence and
-  user-centered thinking to every project I work on. I look
-  forward to the opportunity to bring my skills and passion to
-  your next project.
-</p>
-
+                Hi, I&apos;m Kuldeep, a web developer and UI/UX designer with
+                technology like Reactjs, Tailwind, etc. I have just completed my
+                BSC.IT course. I am always looking for new and innovative ways
+                to bring my clients&apos; visions to life.
+              </p>
+              <p className="font-medium my-4">
+                I believe that design is about more than just making things look
+                pretty – it&apos;s about solving problems and creating
+                intuitive, enjoyable experiences for users.
+              </p>
+              <p className="font-medium">
+                Whether I&apos;m working on a website, mobile app, or other
+                digital product, I bring my commitment to design excellence and
+                user-centered thinking to every project I work on. I look
+                forward to the opportunity to bring my skills and passion to
+                your next project.
+              </p>
             </div>
 
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
@@ -122,6 +123,8 @@ const about = () => {
           <Skills />
           {/* <Experience /> */}
           <Education />
+          <Projects/>
+          <Contact/>
         </Layout>
       </main>
     </>

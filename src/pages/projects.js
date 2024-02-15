@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import iNoteBook from "../../public/images/projects/iNoteBook.jpg";
+import BargainBazaar from "../../public/images/projects/BargainBazaar.PNG"
 import News from "../../public/images/projects/News.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -134,7 +135,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Kuldeep | Projects Page </title>
+      <title>Kuldeep | Portfolio</title>
         <meta name="description" content="any description"></meta>
       </Head>
       <TransitionEffect/>
@@ -148,13 +149,23 @@ const projects = () => {
           <div className="grid grid-col-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeatureProjects
+                title={"BargainBazaar web Application"}
+                img={BargainBazaar}
+                summary="BargainBazaar is an interactive web application designed to revolutionize your online shopping experience. Built with cutting-edge technologies like React, Tailwind CSS, MongoDB, Express.js, and Node.js, BargainBazaar offers a seamless, secure, and dynamic platform for both buyers and sellers"
+                link="https://bargainbazaar.onrender.com"
+                github="https://github.com/kuldeep8454/BargainBazaar"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Projects
                 title={"iNoteBook web Application"}
                 img={iNoteBook}
-                summary="A iNoteBook web Application using React, Bootstrap CSS, MongoDb, ExpressJs and NodeJs. 
-            You can create note with that title and description that notes will stored on cloud with security notes can be accessed by only you."
+            //     summary="A iNoteBook web Application using React, Bootstrap CSS, MongoDb, ExpressJs and NodeJs. 
+            // You can create note with that title and description that notes will stored on cloud with security notes can be accessed by only you."
                 link="https://inotebook-semd.onrender.com"
                 github="https://github.com/kuldeep8454/React-iNotebook"
-                type="Featured Projects"
+                type="Project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -165,7 +176,7 @@ const projects = () => {
                 // You can create note with that title and description that notes will stored on cloud with security notes can be accessed by only you."
                 link="https://github.com/kuldeep8454/React-KP-News"
                 github="https://github.com/kuldeep8454/React-KP-News"
-                type="Projects"
+                type="Project"
               />
             </div>
             {/* <div className="col-span-6 sm:col-span-12"><Projects

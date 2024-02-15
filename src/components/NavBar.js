@@ -98,6 +98,7 @@ function NavBar() {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
+          <CustomLink href="/contact" title="Contact" className="mx-4" />
           {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
         </nav>
 
@@ -188,6 +189,12 @@ function NavBar() {
               className=""
               toggle={handleClick}
             />
+            <CustomMobileLink
+              href="/contact"
+              title="Contact"
+              className=""
+              toggle={handleClick}
+            />
             {/* <CustomMobileLink
               href="/articles"
               title="Articles"
@@ -227,23 +234,7 @@ function NavBar() {
               <LinkedInIcon />
             </motion.a>
 
-            {/* <motion.a href="https://twitter.com" target="_blank" className="w-6 mr-3"
-        whileHover={{y: -2 }}
-        whileTap={{scale: 0.9}}
-        >
-          <PinterestIcon/>
-        </motion.a> */}
-
-            {/* <motion.a
-              href="https://twitter.com"
-              target="_blank"
-              className="w-6 mr-3 sm:mx-1"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <WhatsappIcon />
-            </motion.a> */}
-
+            
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={`ml-3 flex items-center justify-center rounded-full p-1
