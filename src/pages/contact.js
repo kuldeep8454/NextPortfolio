@@ -4,7 +4,6 @@ import TransitionEffect from "@/components/TransitionEffect";
 import Head from "next/head";
 import React from "react";
 
-
 const contact = () => {
   return (
     <>
@@ -19,10 +18,7 @@ const contact = () => {
             text="Connect for Infinite Possibilities "
             className="mb-16 dark:text-light lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div
-            name="contact"
-            className="w-full h-screen p-4 dark:text-light"
-          >
+          <div name="contact" className="w-full h-screen p-4 dark:text-light">
             <div className="flex flex-col p-4 justify-center mx-w-screen-lg mx-auto h-full">
               <div className="pb-8">
                 <p className="text-4xl font-bold inline border-b-4 border-black dark:border-light">
@@ -45,7 +41,7 @@ const contact = () => {
                     placeholder="Your name"
                     className="my-4 p-2 bg-transparent border-2 border-dark dark:border-light rounded-md  dark:text-light focus:outline-none"
                   />
-                  
+
                   <input
                     required
                     type="email"
