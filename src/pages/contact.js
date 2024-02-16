@@ -19,13 +19,13 @@ const contact = () => {
             className="mb-16 dark:text-light lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
           <div name="contact" className="w-full h-screen p-4 dark:text-light">
-            <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+            <div className="flex flex-col p-4 justify-center mx-w-screen-lg mx-auto h-full">
               <div className="pb-8">
                 <p className="text-4xl font-bold inline border-b-4 border-black dark:border-light">
-                  Contact
+                  {`Contact`}
                 </p>
                 <p className="py-6 text-2xl font-semibold font-serif">
-                  Submit the form to get in touch with me
+                  {`Submit the form to get touch with me`}
                 </p>
               </div>
               <div className="flex justify-center items-center">
@@ -39,7 +39,7 @@ const contact = () => {
                     type="text"
                     name="name"
                     placeholder="Your name"
-                    className="my-4 p-2 bg-transparent border-2 border-dark dark:border-light rounded-md dark:text-light focus:outline-none"
+                    className="my-4 p-2 bg-transparent border-2 border-dark dark:border-light rounded-md  dark:text-light focus:outline-none"
                   />
 
                   <input
@@ -60,7 +60,7 @@ const contact = () => {
                     className="bg-gradient-to-b from-cyan-500 to-black-800 font-semibold px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base hover:scale-110 duration-300"
                     target="_blank"
                   >
-                    Let&apos;s talk
+                    {`Let's talk`}
                   </button>
                 </form>
               </div>
