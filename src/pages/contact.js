@@ -20,7 +20,7 @@ const contact = () => {
           />
           <div name="contact" className="w-full h-screen p-4 dark:text-light">
             <div className="flex flex-col p-4 justify-center mx-w-screen-lg mx-auto h-full">
-              <div className="pb-8">
+              <div className="pb-4">
                 <p className="text-4xl font-bold inline border-b-4 border-black dark:border-light">
                   {`Contact`}
                 </p>
@@ -29,7 +29,7 @@ const contact = () => {
                 <form
                   action="https://getform.io/f/fad5befb-fd45-442d-b24d-ec12339d8510"
                   method="POST"
-                  className="flex flex-col w-full md:w-[70%]"
+                  className="flex flex-col w-full md:w-full"
                 >
                   <input
                     required
