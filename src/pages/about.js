@@ -8,8 +8,6 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
-import Projects from "./projects";
-import Contact from "./contact";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({ values }) => {
@@ -39,7 +37,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Kuldeep | Portfolio</title>
+        <title>Kuldeep | About</title>
         <meta name="description" content="About" />
       </Head>
       <TransitionEffect />
@@ -123,8 +121,6 @@ const about = () => {
           <Skills />
           {/* <Experience /> */}
           <Education />
-          <Projects/>
-          <Contact/>
         </Layout>
       </main>
     </>

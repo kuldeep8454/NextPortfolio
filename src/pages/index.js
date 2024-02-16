@@ -21,10 +21,10 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
-          <div className="flex items-center justify-between w-full lg:flex-col h-[100vh]">
+          <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/3 md:w-1/2">
             
-              <div className=" top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+              <div className=" top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem]" />
               <Image
                 src={profilePic}
                 alt=""
@@ -64,9 +64,6 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="h-[100%]">
-            <About />
           </div>
         </Layout>
         {/* <HireMe /> */}

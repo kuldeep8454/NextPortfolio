@@ -135,7 +135,7 @@ const projects = () => {
   return (
     <>
       <Head>
-      <title>Kuldeep | Portfolio</title>
+      <title>Kuldeep | Projects</title>
         <meta name="description" content="any description"></meta>
       </Head>
       <TransitionEffect/>

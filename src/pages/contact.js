@@ -8,7 +8,7 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>Kuldeep | Portfolio</title>
+        <title>Kuldeep | Contact</title>
         <meta name="description" content="Contact Details" />
       </Head>
       <TransitionEffect />
@@ -23,9 +23,6 @@ const contact = () => {
               <div className="pb-8">
                 <p className="text-4xl font-bold inline border-b-4 border-black dark:border-light">
                   {`Contact`}
-                </p>
-                <p className="py-6 text-2xl font-semibold font-serif">
-                  {`Submit the form to get touch with me`}
                 </p>
               </div>
               <div className="flex justify-center items-center">
