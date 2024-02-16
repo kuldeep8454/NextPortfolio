@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import iNoteBook from "../../public/images/projects/iNoteBook.jpg";
-import BargainBazaar from "../../public/images/projects/BargainBazaar.png"
+import BargainBazaar from "../../public/images/projects/BargainBazaar.jpeg"
 import News from "../../public/images/projects/News.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
